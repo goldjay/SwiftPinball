@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59048AEC1E8318F700AF5D53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59048AEB1E8318F700AF5D53 /* AppDelegate.swift */; };
+		59048AEE1E8318F700AF5D53 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59048AED1E8318F700AF5D53 /* GameScene.sks */; };
+		59048AF21E8318F700AF5D53 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59048AF11E8318F700AF5D53 /* GameScene.swift */; };
+		59048AF41E8318F700AF5D53 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59048AF31E8318F700AF5D53 /* GameViewController.swift */; };
+		59048AF71E8318F700AF5D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59048AF51E8318F700AF5D53 /* Main.storyboard */; };
+		59048AF91E8318F700AF5D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59048AF81E8318F700AF5D53 /* Assets.xcassets */; };
+		59048AFC1E8318F700AF5D53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59048AFA1E8318F700AF5D53 /* LaunchScreen.storyboard */; };
+		59048B041E8323B800AF5D53 /* GameSceneTouches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59048B031E8323B800AF5D53 /* GameSceneTouches.swift */; };
+		59048B061E8422F500AF5D53 /* Flipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59048B051E8422F500AF5D53 /* Flipper.swift */; };
+		591C76AB1E84E1AF001A95A1 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C76AA1E84E1AF001A95A1 /* Ball.swift */; };
+		594DCD8A1E84B09600F79CBB /* GameScene_Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594DCD891E84B09600F79CBB /* GameScene_Physics.swift */; };
+		594DCD8C1E84B29A00F79CBB /* FlipperStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		59048AE81E8318F700AF5D53 /* Pinball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59048AEB1E8318F700AF5D53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59048AED1E8318F700AF5D53 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		59048AF11E8318F700AF5D53 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		59048AF31E8318F700AF5D53 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		59048AF61E8318F700AF5D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59048AF81E8318F700AF5D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59048AFB1E8318F700AF5D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59048AFD1E8318F700AF5D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59048B031E8323B800AF5D53 /* GameSceneTouches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneTouches.swift; sourceTree = "<group>"; };
+		59048B051E8422F500AF5D53 /* Flipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flipper.swift; sourceTree = "<group>"; };
+		591C76AA1E84E1AF001A95A1 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		594DCD891E84B09600F79CBB /* GameScene_Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene_Physics.swift; sourceTree = "<group>"; };
+		594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipperStop.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59048AE51E8318F700AF5D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59048ADF1E8318F700AF5D53 = {
+			isa = PBXGroup;
+			children = (
+				59048AEA1E8318F700AF5D53 /* Pinball */,
+				59048AE91E8318F700AF5D53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59048AE91E8318F700AF5D53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59048AE81E8318F700AF5D53 /* Pinball.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59048AEA1E8318F700AF5D53 /* Pinball */ = {
+			isa = PBXGroup;
+			children = (
+				59048AEB1E8318F700AF5D53 /* AppDelegate.swift */,
+				59048AED1E8318F700AF5D53 /* GameScene.sks */,
+				59048AF11E8318F700AF5D53 /* GameScene.swift */,
+				594DCD891E84B09600F79CBB /* GameScene_Physics.swift */,
+				59048B031E8323B800AF5D53 /* GameSceneTouches.swift */,
+				59048AF31E8318F700AF5D53 /* GameViewController.swift */,
+				59048AF51E8318F700AF5D53 /* Main.storyboard */,
+				59048B051E8422F500AF5D53 /* Flipper.swift */,
+				594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */,
+				591C76AA1E84E1AF001A95A1 /* Ball.swift */,
+				59048AF81E8318F700AF5D53 /* Assets.xcassets */,
+				59048AFA1E8318F700AF5D53 /* LaunchScreen.storyboard */,
+				59048AFD1E8318F700AF5D53 /* Info.plist */,
+			);
+			path = Pinball;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59048AE71E8318F700AF5D53 /* Pinball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59048B001E8318F700AF5D53 /* Build configuration list for PBXNativeTarget "Pinball" */;
+			buildPhases = (
+				59048AE41E8318F700AF5D53 /* Sources */,
+				59048AE51E8318F700AF5D53 /* Frameworks */,
+				59048AE61E8318F700AF5D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pinball;
+			productName = Pinball;
+			productReference = 59048AE81E8318F700AF5D53 /* Pinball.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59048AE01E8318F700AF5D53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Goldjay;
+				TargetAttributes = {
+					59048AE71E8318F700AF5D53 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HR2MYMKCB9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 59048AE31E8318F700AF5D53 /* Build configuration list for PBXProject "Pinball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59048ADF1E8318F700AF5D53;
+			productRefGroup = 59048AE91E8318F700AF5D53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59048AE71E8318F700AF5D53 /* Pinball */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59048AE61E8318F700AF5D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59048AF71E8318F700AF5D53 /* Main.storyboard in Resources */,
+				59048AEE1E8318F700AF5D53 /* GameScene.sks in Resources */,
+				59048AF91E8318F700AF5D53 /* Assets.xcassets in Resources */,
+				59048AFC1E8318F700AF5D53 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59048AE41E8318F700AF5D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591C76AB1E84E1AF001A95A1 /* Ball.swift in Sources */,
+				594DCD8A1E84B09600F79CBB /* GameScene_Physics.swift in Sources */,
+				59048B041E8323B800AF5D53 /* GameSceneTouches.swift in Sources */,
+				59048AF21E8318F700AF5D53 /* GameScene.swift in Sources */,
+				59048AF41E8318F700AF5D53 /* GameViewController.swift in Sources */,
+				59048B061E8422F500AF5D53 /* Flipper.swift in Sources */,
+				59048AEC1E8318F700AF5D53 /* AppDelegate.swift in Sources */,
+				594DCD8C1E84B29A00F79CBB /* FlipperStop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		59048AF51E8318F700AF5D53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59048AF61E8318F700AF5D53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59048AFA1E8318F700AF5D53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59048AFB1E8318F700AF5D53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59048AFE1E8318F700AF5D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59048AFF1E8318F700AF5D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59048B011E8318F700AF5D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HR2MYMKCB9;
+				INFOPLIST_FILE = Pinball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldjay.Pinball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		59048B021E8318F700AF5D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HR2MYMKCB9;
+				INFOPLIST_FILE = Pinball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldjay.Pinball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59048AE31E8318F700AF5D53 /* Build configuration list for PBXProject "Pinball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59048AFE1E8318F700AF5D53 /* Debug */,
+				59048AFF1E8318F700AF5D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59048B001E8318F700AF5D53 /* Build configuration list for PBXNativeTarget "Pinball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59048B011E8318F700AF5D53 /* Debug */,
+				59048B021E8318F700AF5D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59048AE01E8318F700AF5D53 /* Project object */;
+}
