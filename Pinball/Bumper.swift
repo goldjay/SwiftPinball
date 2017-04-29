@@ -33,24 +33,17 @@ class Bumper: SKSpriteNode {
         isActive = false
     }
     
-    func colorFlash(sender: SKSpriteNode, color: UIColor){
-        
+    func activateColor(sender: SKSpriteNode, color: UIColor){
+        var changeColor = color
         if(isActive){
-            UIView.animate(withDuration: 0.4, animations: {
-                sender.color = self.originalColor
-                
-                }, completion: nil)
+            changeColor = self.originalColor
         } else {
-            UIView.animate(withDuration: 0.4, animations: {
-                sender.color = color
-                
-                }, completion: nil)
+            changeColor = color
         }
         
-        
-        //Pause
-        
-        //sender.color = originalColor
+        UIView.animate(withDuration: 0.4, animations: {
+            sender.color = changeColor
+        }, completion: nil)
     }
     
     func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {

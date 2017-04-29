@@ -27,6 +27,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var mainBall:Ball = Ball()
     
+    var score: Int = 0 {
+        didSet {
+            var node = self.childNode(withName: "ScoreLabel") as? SKLabelNode
+            node?.text = "Score: \(score)"
+        }
+    }
+    
     
     override func didMove(to view: SKView) {
         
@@ -74,6 +81,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
     
+        // RESETS ball if going below
         if(mainBall.position.y < -660){
             mainBall.position.y = 500
             mainBall.position.x = -30
@@ -136,7 +144,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // change to detect degrees of the flipper?
         
-        //If we ran into the FlipperStop or flipperStop runs into flipper
+        //Flipper to FlipperStop
         if(contact.bodyA.categoryBitMask == BodyType.flipper.rawValue && contact.bodyB.categoryBitMask == BodyType.flipperStop.rawValue){
             print("FLIP STOP")
             
@@ -152,25 +160,31 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 someFlipper.lockFlipperUp()
             }
         }
-        // If the ball hit a bumper or vice-versa
+        // Ball to bumper
         else if(contact.bodyA.categoryBitMask == BodyType.bumper.rawValue && contact.bodyB.categoryBitMask == BodyType.ball.rawValue){
             print("BUMPER CONTACT A")
             
             if let someBumper: Bumper = contact.bodyA.node as? Bumper {
-                someBumper.colorFlash(sender: someBumper, color: UIColor.black)
+                someBumper.activateColor(sender: someBumper, color: UIColor.black)
                 someBumper.isActive = !someBumper.isActive
+                score += 1
             }
         } else if(contact.bodyA.categoryBitMask == BodyType.ball.rawValue && contact.bodyB.categoryBitMask == BodyType.bumper.rawValue){
             print("BUMPER CONTACT B")
             
             if let someBumper: Bumper = contact.bodyA.node as? Bumper {
-                someBumper.colorFlash(sender: someBumper, color: UIColor.black)
+                someBumper.activateColor(sender: someBumper, color: UIColor.black)
                 someBumper.isActive = !someBumper.isActive
+                score += 1
             }
         }
         else {
             print("UNKNOWN CONTACT!!")
         }
+    }
+    
+    func updateScore() {
+        
     }
 
     

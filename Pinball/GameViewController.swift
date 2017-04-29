@@ -22,9 +22,19 @@ class GameViewController: UIViewController {
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
+    
                 
                 // Present the scene
                 view.presentScene(scene)
+                
+                let scoreNode = SKLabelNode()
+                scoreNode.text = "SCORE: 0"
+                scoreNode.name = "ScoreLabel"
+                scoreNode.fontSize = 20
+                scoreNode.position = CGPoint(x: 325, y: 641)
+                scoreNode.zPosition = 1
+                
+                scene.addChild(scoreNode)
             }
             
             view.ignoresSiblingOrder = true
