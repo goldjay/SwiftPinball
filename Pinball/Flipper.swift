@@ -51,8 +51,9 @@ class Flipper:SKSpriteNode {
             self.physicsBody?.isDynamic = true
             self.physicsBody?.allowsRotation = true
             
+            print("SENDING IMPULSE")
             // Impulse to apply physics force (Moving normally doesn't work)
-            self.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 5000))
+            self.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 1000))
         }
         
     }
@@ -75,12 +76,15 @@ class Flipper:SKSpriteNode {
     func lockFlipperDown(){
         self.zRotation = degreesToRadians(degrees: lowerRotation) // MAY NOT NEED FUNCTION
         lockFlipper()
+        self.update()
+        
     }
     
     func lockFlipperUp() {
         print("LOCKED UP!")
         self.zRotation = degreesToRadians(degrees: upperRotation) // MAY NOT NEED FUNCTION
         lockFlipper()
+        self.update()
     }
     
     func lockFlipper() {

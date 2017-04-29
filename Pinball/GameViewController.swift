@@ -15,9 +15,6 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sksNameToLoad: String = "GameScene"
-        
-        var fullSKNameToLoad: String = sksNameToLoad
         
         //Checks to see if file exists
         if let view = self.view as! SKView? {

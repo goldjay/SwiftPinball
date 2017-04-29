@@ -19,6 +19,7 @@
 		591C76AB1E84E1AF001A95A1 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591C76AA1E84E1AF001A95A1 /* Ball.swift */; };
 		594DCD8A1E84B09600F79CBB /* GameScene_Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594DCD891E84B09600F79CBB /* GameScene_Physics.swift */; };
 		594DCD8C1E84B29A00F79CBB /* FlipperStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */; };
+		59FE87371E9B38AE0097913F /* Bumper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FE87361E9B38AE0097913F /* Bumper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		591C76AA1E84E1AF001A95A1 /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 		594DCD891E84B09600F79CBB /* GameScene_Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene_Physics.swift; sourceTree = "<group>"; };
 		594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipperStop.swift; sourceTree = "<group>"; };
+		59FE87361E9B38AE0097913F /* Bumper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bumper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				59048AF31E8318F700AF5D53 /* GameViewController.swift */,
 				59048AF51E8318F700AF5D53 /* Main.storyboard */,
 				59048B051E8422F500AF5D53 /* Flipper.swift */,
+				59FE87361E9B38AE0097913F /* Bumper.swift */,
 				594DCD8B1E84B29A00F79CBB /* FlipperStop.swift */,
 				591C76AA1E84E1AF001A95A1 /* Ball.swift */,
 				59048AF81E8318F700AF5D53 /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 				59048AF41E8318F700AF5D53 /* GameViewController.swift in Sources */,
 				59048B061E8422F500AF5D53 /* Flipper.swift in Sources */,
 				59048AEC1E8318F700AF5D53 /* AppDelegate.swift in Sources */,
+				59FE87371E9B38AE0097913F /* Bumper.swift in Sources */,
 				594DCD8C1E84B29A00F79CBB /* FlipperStop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
